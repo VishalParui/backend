@@ -18,7 +18,7 @@ app.use('/api/auth', authRoutes);
 
 const startServer = async () => {
     try {
-        await mongoose.connect(process.env.DB_URL, );
+         await mongoose.connect(process.env.DB_URL, );
         console.log('Connected to MongoDB');
 
         const PORT = process.env.PORT || 8080;
